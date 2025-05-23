@@ -127,9 +127,7 @@ const QuoteBox = () => {
 
                         <a
                             id="tweet-quote"
-                            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                                `"${currentQuote.text}" — ${currentQuote.author}`
-                            )}`}
+                            href={tweetURL}
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
@@ -163,8 +161,6 @@ const QuoteBox = () => {
                         New quote
                     </button>
                 </div>
-
-
             </div>
 
             <p style={{ color: "white", marginTop: "1rem", fontSize: "0.9rem" }}>
